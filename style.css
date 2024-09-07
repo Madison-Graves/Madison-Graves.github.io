@@ -515,7 +515,7 @@ footer nav{
     .header a{
        
         font-size: .7rem;
-        margin: 1rem 0; /* Space out the items vertically */
+        margin: .5rem 0; /* Space out the items vertically */
         text-align: center;
         width:50%;
         height: 5rem;
@@ -523,21 +523,23 @@ footer nav{
     .header-nav{
         display: none;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: center;
+        align-content: center;
         position: absolute;
-        top: 70px; /* Adjust based on your header height */
-        right: 1.5rem;
+        top: 4.5rem; /* Adjust based on your header height */
         background-color: rgb(233, 233, 233);
-        border:2px solid rgb(207, 207, 207);
+        border:1px solid rgb(207, 207, 207);
         width: 70%;
-        height:60vh;
+        height:auto;
         padding: 1rem;
         border-radius: 3%;
+       
     }
 
     .header-left , .header-right{
         flex-flow: row wrap;
         width: 100%;
+        height:auto;
         justify-content: space-between;
     }
 
@@ -547,9 +549,10 @@ footer nav{
 
     .menu-icon {
             display: flex; /* Show hamburger icon */
-            font-size: 2rem;
+            justify-content: center;
             cursor: pointer;
             width:10%;
+            height:80%;
             position: relative;
            
      }
@@ -578,13 +581,7 @@ footer nav{
         opacity: 1; /* Show the second image when active */
     }
 
-     .menu-icon.active{
-        
-        box-shadow: 0px 0px 7px rgb(115, 115, 115) ;
-        border-radius: 30%;
-        
-
-     }
+    
 
 
     
