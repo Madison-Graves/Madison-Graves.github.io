@@ -6,7 +6,7 @@
     <title>PROJECT 1</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background-color: #0c0c0c;">
      <!--Header Starts-->
@@ -17,16 +17,16 @@
                 
                 
                 <div class="menu-icon" id="menu-icon">
-                    <img class="ham-menu2"src="grid.png"> 
-                    <img class="ham-menu1"src="grid (1).png">
+                    <img class="ham-menu2"src="css/imgs/grid.png"> 
+                    <img class="ham-menu1"src="css/imgs/grid (1).png">
                 </div>
                 <section id="header-nav" class="header-nav">
                 <!--LEFT NAV (Main Nav Section)-->
                 
                 <div class="header-left">
                     <!--NAV BUTTONS/LINKS (Main Nav Section)-->
-                    <a href="index.html#home"><img src="3d-house.png" width="50vw" height="auto" ><p>Home</p></a>
-                    <a href="#about"><img src="teacher.png" width="50vw" height="auto"><p>About</p></a>
+                    <a href="index.html#home"><img src="css/imgs/3d-house.png" width="50vw" height="auto" ><p>Home</p></a>
+                    <a href="#about"><img src="css/imgs/teacher.png" width="50vw" height="auto"><p>About</p></a>
 
                 </div>
             
@@ -34,8 +34,8 @@
                 <!--RIGHT NAV (Main Nav Section)-->
                 <div class="header-right">
                     <!--NAV BUTTONS/LINKS (Main Nav Section)-->
-                    <a href="#project"><img src="folder (1).png" width="50vw" height="auto"><p>Projects</p></a>
-                    <a href="#"><img src="gmail.png" width="50vw" height="auto"><p>Contact</p></a>
+                    <a href="#project"><img src="css/imgs/folder (1).png" width="50vw" height="auto"><p>Projects</p></a>
+                    <a href="#"><img src="css/imgs/gmail.png" width="50vw" height="auto"><p>Contact</p></a>
                     
                     <a href="designprocess.html" title="My Design process"><img src="css/imgs/graphic-designer.png" width="50vw" height="auto"><p>My Design Process</p></a>
                    
@@ -71,7 +71,7 @@
                     <section class="problem-section">
                 
                         <div class="paper-page">
-                            <img src="Design Process.png">  
+                            <img src="css/imgs/Design Process.png">  
                         </div>
                     </section>
         
@@ -160,43 +160,6 @@
     -->
     
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const navItems = document.querySelectorAll('.nav-list li');
-    
-            navItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    // Remove 'active' class from all items
-                    navItems.forEach(nav => nav.classList.remove('active'));
-    
-                    // Add 'active' class to the clicked item
-                    this.classList.add('active');
-                });
-            });
-        });
-
-
-        const menuIcon = document.getElementById('menu-icon');
-        const headernav = document.getElementById('header-nav');
-        const navLinks = document.querySelectorAll('#header-nav a'); // Select all the links inside the menu
-
-        menuIcon.addEventListener('click', () => {
-            headernav.classList.toggle('active'); // Toggle the active class to show/hide the menu
-            menuIcon.classList.toggle('active');  // Toggle the image change
-        });
-
-        // Add event listeners to all the links
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                console.log('Link clicked!'); // Debugging: to ensure event listener works
-                headernav.classList.remove('active'); // Close the menu
-                menuIcon.classList.remove('active');  // Reset the icon
-            });
-        });
-
-
-        
-    </script>
     
 
         
@@ -233,6 +196,6 @@
     </div>
 
 </main>
-    
+<script src="script.js"></script>
 </body>
 </html>
